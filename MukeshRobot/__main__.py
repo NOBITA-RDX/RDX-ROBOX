@@ -1100,11 +1100,13 @@ def main():
             )
         except Unauthorized:
             LOGGER.warning(
-                f"Bot isn't able to send message to [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/+xWcg-WBN1oBjMjk1), go and check!"
+                f"Bot isn't able to send message to @{SUPPORT_CHAT}, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
-    start_handler = CommandHandler("start", start, run_handler = CommandHandler("help", get_help, run_async=True)
+    start_handler = CommandHandler("start", start, run_async=True)
+
+    help_handler = CommandHandler("help", get_help, run_async=True)
     help_callback_handler = CallbackQueryHandler(
         help_button, pattern=r"help_.*", run_async=True
     )
