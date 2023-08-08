@@ -87,20 +87,26 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
+        InlineKeyboardButton(text="💛", callback_data="mukesh_back"),
+        InlineKeyboardButton(text="🧡", callback_data="mukesh_"),
+        InlineKeyboardButton(text="💚", callback_data="source_"),
+        InlineKeyboardButton(text="🖤", user_id="1777270311"),
+        InlineKeyboardButton(text="💙", callback_data="Main_help"),
      ],
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ ᴛᴏ Yᴏᴜʀ Gʀᴏᴜᴘ",
+            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʜʜ ɢʀᴏᴜᴘ",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="📚 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
+        InlineKeyboardButton(
+            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʜʜ ᴄʜᴀɴɴᴇʟ",
+            url=f"https://t.me/{dispatcher.bot.username}?startchannel=new",
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
     ],
     
 
@@ -216,11 +222,11 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.4)
-            lol.edit_text("❤")
+            lol.edit_text("💙")
             time.sleep(0.5)
-            lol.edit_text("⚡")
+            lol.edit_text("💚")
             time.sleep(0.3)
-            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
+            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ ʙᴀʙʏ...🖤 ")
             time.sleep(0.4)
             lol.delete()
             
