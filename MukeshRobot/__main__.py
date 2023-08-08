@@ -1104,7 +1104,7 @@ def main():
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
-    start_handler = CommandHandler("start", start, run_ahandler = CommandHandler("help", get_help, run_async=True)
+    start_handler = CommandHandler("start", start, run_handler = CommandHandler("help", get_help, run_async=True)
     help_callback_handler = CallbackQueryHandler(
         help_button, pattern=r"help_.*", run_async=True
     )
