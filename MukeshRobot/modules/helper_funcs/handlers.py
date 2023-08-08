@@ -12,7 +12,7 @@ import MukeshRobot.modules.sql.blacklistusers_sql as sql
 from MukeshRobot import ALLOW_EXCL, DEMONS, DEV_USERS, DRAGONS, TIGERS, WOLVES
 
 if ALLOW_EXCL:
-    CMD_STARTERS = ("/", "!")
+    CMD_STARTERS = ("/", "!","Rdx")
 else:
     CMD_STARTERS = "/"
 
